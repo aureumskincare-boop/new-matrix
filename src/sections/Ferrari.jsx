@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
+import logo from "../../assets/logo.png";
 
 const VIDEO_DARK = "/assets/videos/new-engine.mp4";
 const VIDEO_PINK = "/assets/videos/carlines.mp4";
@@ -66,15 +66,7 @@ export default function Ferrari() {
       <div className="fe-shade" />
 
       <header className="fe-nav">
-        <svg
-          width="34"
-          height="14"
-          viewBox="0 0 34 14"
-          fill="#fff"
-          aria-label="Ferrari"
-        >
-          <path d="M1 11c6-1 8-8 17-9 6-.6 12 2 15 5-5-1-9 0-13 3-6 3-13 2-19 1z" />
-        </svg>
+       <img src={logo} width="120" alt="Ferrari" />
         <nav>
           {["Performance", "Technology", "Interior", "Experience"].map((l) => (
             <a key={l} href={"#" + l.toLowerCase()}>
@@ -219,8 +211,8 @@ const css = `
 .fe-b.in{transition-delay:.45s}
 .fe-scene h1{margin:0;font-weight:300;font-size:clamp(44px,7vw,92px);line-height:.98;letter-spacing:-.025em;text-transform:uppercase}
 .fe-a h1 em{font-style:italic;font-weight:300;display:inline-block;padding-left:.35em}
-.fe-p{margin:3.2vh 0 3vh;max-width:330px;font-size:12px;line-height:1.6;color:rgba(255,255,255,.78)}
-.fe-btn{display:inline-flex;align-items:center;gap:14px;border:0;background:#fff;color:#111;padding:13px 20px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.fe-p{margin:3.2vh 0 3vh;max-width:430px;font-size:18px;line-height:1.6;color:rgba(255,255,255,.78)}
+.fe-btn{display:inline-flex;align-items:center;gap:14px;border:0;background:#fff;color:#111;padding:13px 20px;font-size:18px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
 .fe-line{display:inline-block;width:42px;height:1px;background:#fff;position:absolute;margin-left:130px;opacity:.7}
 .fe-btn:focus-visible,.fe-play:focus-visible,.fe-brands button:focus-visible{outline:2px solid #fff;outline-offset:3px}
 
@@ -240,9 +232,9 @@ const css = `
 
 /* scene 2 */
 .fe-b h1{font-weight:300}
-.fe-mini{display:flex;gap:6px;margin:24vh 0 0;position:absolute;left:5vw;bottom:23vh}
-.fe-mini img{width:44px;height:58px;object-fit:cover;border-radius:2px;background:#d35a85}
-.fe-b .fe-p{position:absolute;left:calc(5vw + 100px);bottom:20vh;max-width:200px;margin:0;font-size:10px}
+.fe-mini{display:flex;gap:15px;margin:24vh 0 0;position:absolute;left:5vw;bottom:23vh}
+.fe-mini img{width:44px;gap:15px;height:58px;object-fit:cover;border-radius:2px;background:#d35a85}
+.fe-b .fe-p{position:absolute;left:calc(5vw + 100px);bottom:20vh;max-width:200px;margin:0;font-size:18px}
 .fe-b .fe-btn{position:absolute;left:5vw;bottom:9vh}
 .fe-btn.light{box-shadow:0 8px 20px rgba(0,0,0,.18)}
 .fe-feats{position:absolute;right:5vw;top:30vh;width:min(32vw,360px);display:grid;gap:0}
