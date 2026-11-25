@@ -222,7 +222,7 @@ const css = `
 .fe-model{position:absolute;right:5vw;bottom:9vh;width:min(36vw,400px)}
 .fe-name{display:flex;gap:10px;align-items:center;justify-content:flex-end;font-size:18px;margin-bottom:14px;opacity:.9}
 .fe-name b{font-weight:600}
-.fe-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:84px;gap:0;background:rgba(20,20,22,.55);backdrop-filter:blur(14px)}
+.fe-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:50px;background:rgba(20,20,22,.55);backdrop-filter:blur(14px)}
 .fe-thumb{background:#c2185b;overflow:hidden}
 .fe-thumb video{width:100%;height:100%;object-fit:cover}
 .fe-stat{padding:14px 16px;font-size:30px;font-weight:300;color:rgba(255,255,255,.9);display:flex;align-items:baseline;flex-wrap:wrap;align-content:center}
@@ -237,7 +237,7 @@ const css = `
 .fe-b .fe-p{position:absolute;left:calc(5vw + 100px);bottom:20vh;max-width:200px;margin:0;font-size:18px}
 .fe-b .fe-btn{position:absolute;left:5vw;bottom:9vh}
 .fe-btn.light{box-shadow:0 8px 20px rgba(0,0,0,.18)}
-.fe-feats{position:absolute;right:5vw;top:30vh;width:min(32vw,360px);display:grid;gap:0}
+.fe-feats{position:absolute;right:5vw;top:30vh;width:min(32vw,360px);display:grid;gap:50px}
 .fe-feat{display:grid;grid-template-columns:1fr 38%;min-height:92px;font-size:10px;line-height:1.35}
 .fe-ft{padding:14px 14px}
 .fe-ft b{display:block;font-size:13px;font-weight:500;margin-bottom:4px}
